@@ -2,8 +2,8 @@ import { Test, TestingModule } from '@nestjs/testing'
 import { HttpStatus, INestApplication, ValidationPipe } from '@nestjs/common'
 import { TypeOrmModule } from '@nestjs/typeorm'
 import * as request from 'supertest'
-import { CoffeesModule } from '../../src/coffees/coffees.module'
-import { CreateCoffeeDto } from '../../src/coffees/dto/create-coffee.dto'
+import { CoffeesModule } from '../../src-postgres/coffees/coffees.module'
+import { CreateCoffeeDto } from '../../src-postgres/coffees/dto/create-coffee.dto'
 
 describe('AppController (e2e)', () => {
   const coffee = {
